@@ -164,7 +164,8 @@ const PRODUCTS = [
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
         colors: ["Black"],
         images: [
-            "./swag manifest black.jpeg"
+            "./swag manifest black.jpeg",
+            "./swag manifest black back.jpeg"
         ],
         rating: 4.5,
         reviews: 93,
@@ -181,7 +182,8 @@ const PRODUCTS = [
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
         colors: ["White"],
         images: [
-            "./swag manifest white.jpeg"
+            "./swag manifest white.jpeg",
+            "./swag manifest white back.jpeg"
         ],
         rating: 4.4,
         reviews: 77,
@@ -198,7 +200,8 @@ const PRODUCTS = [
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
         colors: ["Green"],
         images: [
-            "./swag manifest green.jpeg"
+            "./swag manifest green.jpeg",
+            "./swag manifest green back.jpeg"
         ],
         rating: 4.6,
         reviews: 58,
@@ -215,7 +218,8 @@ const PRODUCTS = [
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
         colors: ["Purple"],
         images: [
-            "./swag manifest purple.jpeg"
+            "./swag manifest purple.jpeg",
+            "./swag manifest purple back.jpeg"
         ],
         rating: 4.7,
         reviews: 49,
