@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - JUST SWAG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand: #1fa533;
+            --accent: #32D74B;
+            --bg: #050505;
+            --surface: #111;
+            --text: #f5f5f5;
+            --muted: #b3b3b3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #060606;
+            border-top: 4px solid var(--accent);
+            border-bottom: 2px solid rgba(50, 215, 75, 0.18);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            background-image: url('./js logo.jpeg');
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            flex-shrink: 0;
+        }
+
+        .brand-logo img {
+            width: 140px;
+            height: 70px;
+            border-radius: 18px;
+            object-fit: cover;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-toggle:hover {
+            color: var(--brand);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 2rem;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        .nav-link {
+            color: var(--brand) !important;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--muted);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background: var(--surface);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-section h3 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .btn-group {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--brand), var(--accent));
+            color: #111;
+            border: none;
+            padding: 0.9rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(31, 165, 51, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            border: 2px solid var(--brand);
+        }
+
+        .btn-outline:hover {
+            background: rgba(31, 165, 51, 0.1);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0a0a0a;
+                border-bottom: 1px solid rgba(50, 215, 75, 0.1);
+                padding: 1rem;
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+                z-index: 999;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+
+            nav li {
+                border-bottom: 1px solid rgba(50, 215, 75, 0.1);
+                padding: 0.75rem 0;
+            }
+
+            nav li:last-child {
+                border-bottom: none;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+
+            .brand-logo img {
+                width: 110px;
+                height: 55px;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            h2 {
+                font-size: clamp(1.3rem, 3vw, 2rem);
+            }
+
+            .contact-section {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .btn-group {
+                gap: 0.75rem;
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 0.8rem 1rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-links a {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar {
+                padding: 0.75rem 1rem;
+            }
+
+            .brand-logo img {
+                width: 100px;
+                height: 50px;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            }
+
+            .section-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .contact-section {
+                padding: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .contact-section h3 {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="brand-logo">
+                <img src="./js logo.jpeg" alt="JUST SWAG Logo">
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            <nav id="navMenu">
+                <ul class="nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you. Drop us a message anytime and we'll get back to
+                    you as soon as possible.</p>
+
+                <div class="contact-section">
+                    <h3>Connect With Us</h3>
+                    <div class="btn-group">
+                        <a href="https://wa.me/2348058615895" class="btn">WhatsApp</a>
+                        <a href="mailto:justswag403@gmail.com" class="btn">Email Us</a>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://x.com/justswag4033?s=11" class="btn btn-outline">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', function (event) {
+            const navMenu = document.getElementById('navMenu');
+            const toggle = document.getElementById('mobileMenuToggle');
+            if (!navMenu.contains(event.target) && !toggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
