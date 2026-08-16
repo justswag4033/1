@@ -5,7 +5,7 @@ const PRODUCTS = [
     {
         id: 1,
         name: "Swag Unbound Yellow",
-        price: 45000,
+        price: 45060,
         category: "Unbound",
         description: "Premium cotton tee with a timeless design. Clean cut, relaxed fit — perfect for everyday wear. Made from 100% organic cotton that gets softer with every wash.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -22,7 +22,7 @@ const PRODUCTS = [
     {
         id: 2,
         name: "Swag Unbound Pink",
-        price: 45000,
+        price: 45060,
         category: "Unbound",
         description: "Premium cotton tee with a timeless design. Clean cut, relaxed fit — perfect for everyday wear. Made from 100% organic cotton that gets softer with every wash.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -39,7 +39,7 @@ const PRODUCTS = [
     {
         id: 3,
         name: "Swag Unbound Purple",
-        price: 45000,
+        price: 45060,
         category: "Unbound",
         description: "Premium cotton tee with a timeless design. Clean cut, relaxed fit — perfect for everyday wear. Made from 100% organic cotton that gets softer with every wash.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -56,7 +56,7 @@ const PRODUCTS = [
     {
         id: 4,
         name: "Swag Unbound Red",
-        price: 45000,
+        price: 45060,
         category: "Unbound",
         description: "Premium cotton tee with a timeless design. Clean cut, relaxed fit — perfect for everyday wear. Made from 100% organic cotton that gets softer with every wash.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -73,7 +73,7 @@ const PRODUCTS = [
     {
         id: 5,
         name: "Swag Burning Black",
-        price: 45000,
+        price: 37060,
         category: "Burning",
         description: "Bold statement piece with a comfortable polo fit. Smart casual looks that take you from day to night. Premium fabric with a structured collar and clean finish.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -90,7 +90,7 @@ const PRODUCTS = [
     {
         id: 6,
         name: "Swag Burning White",
-        price: 45000,
+        price: 37060,
         category: "Burning",
         description: "Clean and crisp polo for smart casual looks. Premium fabric with a structured collar that keeps its shape wash after wash. Versatile enough for any occasion.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -107,7 +107,7 @@ const PRODUCTS = [
     {
         id: 7,
         name: "Swag Healing Black",
-        price: 45000,
+        price: 37060,
         category: "Healing",
         description: "Comfort polo designed for smart casual looks. Soft premium fabric with a relaxed yet refined silhouette. Great for everyday wear or semi-casual outings.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -124,7 +124,7 @@ const PRODUCTS = [
     {
         id: 8,
         name: "Swag Healing White",
-        price: 45000,
+        price: 37060,
         category: "Healing",
         description: "Comfort polo designed for smart casual looks. Soft premium fabric with a relaxed yet refined silhouette. Great for everyday wear or semi-casual outings.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -158,7 +158,7 @@ const PRODUCTS = [
     {
         id: 10,
         name: "Swag Manifest Black",
-        price: 57600,
+        price: 47060,
         category: "Manifest",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -176,7 +176,7 @@ const PRODUCTS = [
     {
         id: 11,
         name: "Swag Manifest White",
-        price: 57600,
+        price: 47060,
         category: "Manifest",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -194,7 +194,7 @@ const PRODUCTS = [
     {
         id: 12,
         name: "Swag Manifest Green",
-        price: 57600,
+        price: 47060,
         category: "Manifest",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -212,7 +212,7 @@ const PRODUCTS = [
     {
         id: 13,
         name: "Swag Manifest Purple",
-        price: 57600,
+        price: 47060,
         category: "Manifest",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -230,7 +230,7 @@ const PRODUCTS = [
     {
         id: 14,
         name: "Swag crewneck",
-        price: 35000,
+        price: 42060,
         category: "Crewneck",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -247,7 +247,7 @@ const PRODUCTS = [
     {
         id: 15,
         name: "Swag crewneck",
-        price: 35000,
+        price: 42060,
         category: "Crewneck",
         description: "Manifest your style with this sharp, smart casual piece. Refined design with clean lines and a confident silhouette that speaks for itself.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
@@ -277,6 +277,119 @@ const PRODUCTS = [
         availability: true,
         productCode: "SWAG-SIP-SWAG",
         stock: 11
+    },
+    {
+        id: 17,
+        name: "Swag25 yellow",
+        price: 35060,
+        category: "swag25",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["yellow"],
+        images: [
+            "./swag25 yellow.jpg",
+            "./swag25 yellow back.jpg"
+        ],
+        rating: 4.7,
+        reviews: 49,
+        availability: true,
+        productCode: "SWAG25",
+        stock: 11
+    },
+    {
+        id: 18,
+        name: "Swag25 white",
+        price: 35060,
+        category: "swag25",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["White"],
+        images: [
+            "./swag25 white.jpg",
+            "./swag25 white back.jpg"
+
+        ],
+        rating: 4.7,
+        reviews: 49,
+        availability: true,
+        productCode: "SWAG25",
+        stock: 11
+    },
+    {
+        id: 19,
+        name: "Track swag black",
+        price: 105069,
+        category: "track",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["Black"],
+        images: [
+            "./track swag.jpg",
+            "./track swag black.jpg",
+            "./track swag black back.jpg"
+
+        ],
+        rating: 5.0,
+        reviews: 17,
+        availability: true,
+        productCode: "TRACK",
+        stock: 11
+    },
+    {
+        id: 20,
+        name: "Track swag green",
+        price: 105069,
+        category: "track",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["Green"],
+        images: [
+            "./track swag green.jpg",
+            "./track swag g.jpg",
+            "./track swag green back.jpg"
+
+        ],
+        rating: 4.6,
+        reviews: 21,
+        availability: true,
+        productCode: "TRACK",
+        stock: 21
+    },
+    {
+        id: 21,
+        name: "Toliver swag green",
+        price: 35060,
+        category: "tol",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["Green"],
+        images: [
+            "./green.jpg"
+
+        ],
+        rating: 4.9,
+        reviews: 14,
+        availability: true,
+        productCode: "TOL",
+        stock: 5
+    },
+    {
+        id: 22,
+        name: "Toliver swag pink",
+        price: 35060,
+        category: "tol",
+        description: "Designed for those who carry confidence everywhere they go, this jersey brings together athletic style, creativity, and the Just Swag identity in one statement pie",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        colors: ["Green"],
+        images: [
+            "./pink.jpg"
+
+        ],
+        rating: 5.0,
+        reviews: 17,
+        availability: true,
+        productCode: "TOL",
+        stock: 8
     }
 ];
 
